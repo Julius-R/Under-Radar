@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here");
+/*{border: 1px dashed #fff;}*/
+body {
+  margin: 0;
+  padding: 0;
+  background: #111;
+  background-image: url("../imgs/main-img.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #fff;
+  box-sizing: border-box; }
+
+/* HEADER */
+header {
+  color: #fff;
+  font-family: 'Just Me Again Down Here', cursive;
+  font-size: 32px; }
+  header nav {
+    margin: 0;
+    text-align: right;
+    height: 100px; }
+    header nav a {
+      text-decoration: none;
+      font-size: 22px;
+      color: inherit;
+      padding: 0 15px; }
+      header nav a:hover {
+        color: #c0392b;
+        text-decoration: underline; }
+  header .banner {
+    margin: 150px auto 200px auto;
+    width: 50%;
+    text-align: center; }
+    header .banner h1 {
+      margin: 0; }
+    header .banner p {
+      margin: 0; }
+  header .btn:hover {
+    background-color: #bdc3c7; }
+
+#on {
+  color: #27ae60; }
+
+/* Hidden Mobile Menu*/
+.mobile-menu {
+  display: none; }
+  .mobile-menu span {
+    width: 40px;
+    margin-bottom: 5px;
+    border: 3px solid #fff;
+    display: block; }
+
+/* BODY CONTENT */
+.container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  /*Article Page*/
+  /*Contact Form Page*/ }
+  .container .sidebar {
+    margin-right: 15px;
+    width: 30%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(189, 195, 199, 0.1);
+    text-align: center;
+    color: #fff; }
+    .container .sidebar h2 {
+      margin: 0; }
+    .container .sidebar ul {
+      padding: 0; }
+      .container .sidebar ul li {
+        list-style: none;
+        padding-bottom: 10px; }
+        .container .sidebar ul li a {
+          color: inherit; }
+  .container .main {
+    margin-left: 15px; }
+    .container .main section {
+      background-color: rgba(189, 195, 199, 0.2);
+      margin-bottom: 20px;
+      border-radius: 5px; }
+      .container .main section .card {
+        display: flex;
+        padding: 10px; }
+        .container .main section .card .description {
+          width: 50%; }
+        .container .main section .card .sndcld {
+          width: 50%; }
+  .container .contact-form {
+    margin: 0 auto;
+    width: 300px; }
+    .container .contact-form form {
+      width: 100%; }
+      .container .contact-form form input {
+        display: block;
+        margin-bottom: 20px;
+        width: 98%; }
+      .container .contact-form form #clear {
+        width: 100%;
+        margin-top: 10px;
+        border: 1px solid #c0392b;
+        background-color: #c0392b;
+        border-radius: 4px; }
+      .container .contact-form form #enter {
+        width: 100%;
+        border: 1px solid #27ae60;
+        background-color: #27ae60;
+        border-radius: 4px; }
+
+footer {
+  color: #fff;
+  font-family: 'Just Me Again Down Here', cursive;
+  text-align: center; }
+
+/* MEDIA QUERY */
+/*THIS IS FOR THE NAVBAR*/
+@media (max-width: 487px) {
+  nav .mobile-menu {
+    display: block; }
+  nav .header-nav {
+    display: none; }
+  nav .shown {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px; }
+    nav .shown a {
+      display: inline;
+      padding: 0; } }
+@media (max-width: 700px) {
+  .main section .card {
+    flex-direction: column; }
+    .main section .card .description {
+      width: 100%; }
+    .main section .card .sndcld {
+      width: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */

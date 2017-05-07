@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here');
+
+
+
+/*{border: 1px dashed #fff;}*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #111;
+	background-image: url('../imgs/main-img.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 100vh;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+color: #fff;
+font-family: 'Just Me Again Down Here', cursive;
+font-size: 32px;
+nav{
+	margin: 0;
+	text-align: right;
+	height: 100px;
+	a{
+	text-decoration: none;
+	font-size: 22px;
+	color: inherit;
+	padding: 0 15px;
+	&:hover{
+		color: #c0392b;
+		text-decoration: underline;
+		}}}
+.banner {
+	margin: 150px auto 200px auto;
+	width: 50%;
+	text-align: center;
+	h1{margin: 0;}
+	p{margin: 0;}}
+.btn:hover{background-color: rgb(189, 195, 199);}
+}
+
+#on {
+	color: #27ae60;
+}
+
+/* Hidden Mobile Menu*/
+.mobile-menu{
+	display:none;
+	span{
+		width: 40px;
+		margin-bottom: 5px;
+		border: 3px solid #fff; 
+		display: block;}}
+
+
+/* BODY CONTENT */
+.container {
+	margin: 0 auto;
+	width: 80%;
+	display: flex;
+
+	/*Article Page*/
+	.sidebar{
+		margin-right: 15px;                                                                        
+		width:30%;
+		padding: 15px;
+		border-radius: 5px;
+		background-color: rgba(189, 195, 199, 0.1);
+		text-align: center;
+		color: #fff;
+		h2{margin: 0;}
+		ul{padding: 0;
+			li{list-style: none; padding-bottom: 10px;
+            	a{color: inherit;}}}}
+	.main{
+		margin-left: 15px;
+		section{
+			background-color: rgba(189, 195, 199, 0.2);
+			margin-bottom: 20px;
+			border-radius: 5px;
+			.card {
+				display: flex;
+				padding: 10px;
+				.description{width:50%;}
+				.sndcld{width: 50%;}
+				}}}
+				
+
+		/*Contact Form Page*/
+		.contact-form{
+			margin: 0 auto;
+			width: 300px;
+			form{ 
+				width: 100%;
+				input{
+					display: block;
+					margin-bottom: 20px;
+					width: 98%;}
+					#clear {
+						width: 100%;
+						margin-top: 10px;
+						border: 1px solid #c0392b;
+						background-color: #c0392b;
+						border-radius: 4px;
+					}
+					#enter {
+						width: 100%;
+						border: 1px solid #27ae60;
+						background-color: #27ae60;
+						border-radius: 4px;
+					}
+			}}
+}
+
+
+
+
+
+footer {
+	color: #fff;
+	font-family: 'Just Me Again Down Here', cursive;
+	text-align: center;
+}
+
+
+
+/* MEDIA QUERY */
+/*THIS IS FOR THE NAVBAR*/
+
+@media (max-width: 487px){
+nav{
+		.mobile-menu{display: block;}
+		.header-nav{display: none;}
+		.shown {display: block; text-align: center; margin-bottom: 10px;
+		a{display:inline; padding: 0; }}}}
+
+@media (max-width: 700px){
+	.main{
+		section{
+			.card {
+				flex-direction: column;
+				.description{width:100%;}
+				.sndcld{width:100%;}
+				}}}
+}

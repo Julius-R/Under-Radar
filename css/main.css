@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic');
+
+body{
+	padding-top: 70px;
+	background: #111;
+	background-image: url("../imgs/main-img.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 100vh;
+	color: #fff;
+	font-family: 'Gentium Book Basic', serif;
+}
+
+nav {
+  font-family: 'Gentium Book Basic', serif;
+ }
+
+.hero{
+	height: 100vh;
+}
+
+.banner {
+    margin: 250px auto;
+    width: 50%;
+    text-align: center; 
+}
+.banner h1 {
+      margin: 0; 
+      font-size: 72px;
+  }  
+.banner p {
+      margin: 0;
+	font-size: 32px;
+       }
+.chk{
+	margin: 0 auto;
+	text-align: center;
+	align-content: center; 
+	border: 2px solid rgb(189, 195, 199); 
+	border-radius: 35px; 
+	width: 275px; 
+	padding-top: 5px;
+	height: 40px;
+	font-size: 1.5em;
+}
+.chk:hover {
+    background-color: #bdc3c7; }
+
+section{
+	padding: 20px;
+	margin-bottom: 50px;
+	background-color: rgba(189, 195, 199, 0.2);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+form{
+	margin: 0 auto;
+	width: 70%;}
+
+
+#clear {
+        width: 100%;
+        border: 1px solid #c0392b;
+        background-color: #c0392b;
+        border-radius: 4px;
+          }
+
+ #enter {
+        width: 100%;
+        border: 1px solid #27ae60;
+        background-color: #27ae60;
+        border-radius: 4px;
+        cursor: pointer;
+          }
+
+footer {
+	background-color: #111;
+	text-align: center;
+	color: #fff;
+}
+
+
+
+@media (max-width: 420px){
+	.banner {
+    margin: 50px auto 100px auto;
+}
+}
